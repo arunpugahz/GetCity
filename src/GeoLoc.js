@@ -19,8 +19,6 @@ export default class GelLocation extends React.Component {
 
   getMyLocation() {
     const location = window.navigator && window.navigator.geolocation;
-    console.log('location:', window.navigator.geolocation);
-
     if (location) {
       location.getCurrentPosition(
         position => {
